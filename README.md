@@ -208,6 +208,6 @@ Fixed by aligning dependency versions.
 ## 👨‍💻 Author
 
 <p align="center">
-  <strong>Built by elsa888</strong><br />
+  <strong>Built by aqsa890</strong><br />
   Kubernetes learning project 🚀
 </p>
