@@ -2,7 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const { nanoid } = require("nanoid");
 const path = require("path");
 
 dotenv.config();
@@ -38,6 +37,7 @@ app.post("/api/shorten", async (req, res) => {
       return res.status(400).json({ error: "URL is required" });
     }
 
+    const { nanoid } = await import('nanoid');
     const shortId = nanoid(7);
 
     const newUrl = new Url({
